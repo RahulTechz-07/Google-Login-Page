@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect('mongodb://127.0.0.1:27017/Project1', {
+mongoose.connect('mongodb+srv://rahulvasu:rahulvasu007!@cluster0.ynyuior.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -91,4 +91,4 @@ app.post('/Password1',async (req,res) =>{
 
 })
 
-app.listen(5000, () => console.log('Server started on port 5000'));
+app.listen(10000 , () => console.log('Server started on port 5000'));
